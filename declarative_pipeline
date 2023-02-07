@@ -4,7 +4,7 @@ pipeline{
       PATH = "/opt/apache-maven-3.6.3/bin:$PATH"
     }
     stages{
-        stage('git checkout){
+        stage('git checkout'){
             steps{
                 git 'https://github.com/javahometech/myweb'
             }
