@@ -1,4 +1,4 @@
 FROM openjdk:8
-ADD target/TomcatMavenApp-2.0.war TomcatMavenApp-2.0.war
-ENTRYPOINT ["java", "-jar", "TomcatMavenApp-2.0.war"]
+COPY /target/TomcatMavenApp-2.0.war /home/TomcatMavenApp-2.0.war
+CMD ["java", "-jar", "TomcatMavenApp-2.0.war"]
 EXPOSE 80
